@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="admin.css">
+<div class="loginbox">
+	<h1>ADMIN LOGIN</h1>
+<form name=f method="post" action="admin.py">
+        <p>Admin ID</p>
+        <input type=text name=t1 placeholder="Enter ID">
+        <p>Admin Password</p>
+        <input type="password" name=t2 placeholder="Enter Name">
+        <input type=submit value="Login" name=b1>
+        <input type=button value="Cancel" onclick="cln()">
+</form>
+<script>
+    function cln()
+    {
+        window.close()
+    }
+</script>

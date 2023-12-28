@@ -1,0 +1,79 @@
+create table roll 
+(
+	id int(10),
+	roll_title varchar(40),
+	roll_descr varchar(40)
+)
+/
+create table permission 
+(
+	id int(10),
+	roll_id int(10),
+	title varchar(40),
+	module varchar(40),
+	descr varchar(40)
+)
+/
+create table user1				
+(
+	id int(10),
+	roll_id int(10),
+	name varchar(50),
+	email varchar(50),
+	dob varchar(50),
+	address varchar(40)
+)
+/
+create table medicines
+(
+	id int(10),
+	name varchar(40),
+	company varchar(40),
+	cost varchar(40),
+	type varchar(40),
+	descr varchar(40)
+)
+/
+create table appointments				
+(
+	id int(10),
+	appnum varchar(40),
+	type varchar(40),
+	date1 varchar(40),
+	descr varchar(40),
+	doctor_id int(10)
+)
+/
+create table doctor
+(
+	id int(10),
+	name varchar(40),
+	mobile varchar(40),
+	email varchar(40),
+	address varchar(40),
+	password varchar(40),
+	username varchar(40)
+)
+/
+create table hospital
+(
+	id int(10),
+	name varchar(40),
+	type varchar(40),
+	descr varchar(40),
+	place varchar(40),
+	address varchar(40),
+	doctor_id int(10)
+)
+/
+create table patient
+(
+	id int(10),
+	mobile varchar(40),
+	name varchar(40),
+	email varchar(40),
+	address varchar(40),
+	password varchar(40),
+	username varchar(40)
+)
+/

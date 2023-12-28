@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="inquiry.css">
+<div class="container">
+<form name=f method="post" action="inquiry.py">
+    <table border="1">
+    <h3>INQUIRY FORM</h3>
+            Name
+            <input type=text name=t1 onkeypress="return allowOnlyLetters(event,this);" placeholder="Your Name">
+            Mobile Number
+            <input type=number name=t2 placeholder="Phone number">
+            Email
+            <input type=email name=t3 placeholder="Email ID">
+            Descreption
+            <textarea id="Message" rows="4" name=t4 placeholder="How can we help you?"></textarea>
+            <input type=submit value="Submit" name=b1>
+           <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<table><tr><td>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/profile.php?id=100025037976226" class="fa fa-facebook"></a>
+<a href="https://twitter.com/kumarachal104" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/achal4769/" class="fa fa-instagram"></a>
+<a href="https://wa.link/sw5b97" class="fa fa-whatsapp"></a>
+<a href="https://mail.google.com/mail/u/0/#inbox" class="fa fa-mail-reply"></a>
+</td></tr>
+</table>
+    </table>
+     
+    </form>
+   
+</div>
+
+        <script language="Javascript" type="text/javascript">    
+    
+            function allowOnlyLetters(e, t)   
+            {    
+               if (window.event)    
+               {    
+                  var charCode = window.event.keyCode;    
+               }    
+               else if (e)   
+               {    
+                  var charCode = e.which;    
+               }    
+               else { return true; }    
+               //alert(charCode)
+               if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))    
+                   return true;    
+               else  
+               {    
+                  alert("Please enter only alphabets");    
+                  return false;    
+               }           
+            }      
+        </script>

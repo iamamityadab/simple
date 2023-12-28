@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="login.css">
+<div class="loginbox">
+	<h1>LOGIN HERE</h1>
+<form name=f method="post" action="login.py">
+		<p>Login ID</p>
+		<input type=text name=t1 placeholder="Enter ID">
+		<p>Login Password</p>
+		<input type="password" name=t2 placeholder="Enter Password">
+	<input type=submit value="Login" name=b1>
+	<input type=button value="Cancel" onclick="cln()">
+	<a href="admin.html">New User</a>
+</form>
+</div>
+<script>
+	function cln()
+	{
+		window.close()
+	}
+</script>

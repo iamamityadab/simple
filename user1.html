@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="user.css">
+<div class="loginbox">
+	<h1>USER</h1>
+<form name=f method="post" action="user1.py">
+		<p>ID</p>
+		<input type=text name=t1 placeholder="Enter User ID">
+		<p>Roll Id</p>
+		<input type=text name=t2 placeholder="Enter Roll ID">
+		<p>Name</p>
+		<input type=text name=t3 onkeypress="return allowOnlyLetters(event,this);" placeholder="Enter Name">
+		<p>Email</p>
+		<input type=email name=t4 placeholder="Enter User Email">
+		<p>DOB</p>
+		<input type=date name=t5 placeholder="Enter User DOB">
+		<p>Address</p>
+		<input type=text name=t6 placeholder="Enter User Address">
+		<input type=submit value="Search Roll ID" name=b1>
+<tr>
+<th>
+<input type=submit value="Save" name=b1>
+<input type=submit value="Update" name=b1>
+<input type=submit value="Delete" name=b1>
+<input type=submit value="All Search" name=b1>
+<input type=submit value="Particular Search" name=b1></th>
+</tr>
+<script language="Javascript" type="text/javascript">    
+    
+	function allowOnlyLetters(e, t)   
+	{    
+	   if (window.event)    
+	   {    
+		  var charCode = window.event.keyCode;    
+	   }    
+	   else if (e)   
+	   {    
+		  var charCode = e.which;    
+	   }    
+	   else { return true; }    
+	   if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))    
+		   return true;    
+	   else  
+	   {    
+		  alert("Please enter only alphabets");    
+		  return false;    
+	   }           
+	}      
+</script>

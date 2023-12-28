@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="doctor.css">
+<div class="loginbox">
+	<h1>DOCTOR</h1>
+<form name=f method=post action="doctor.py">
+		<p>ID</p>
+		<input type=text name=t1 placeholder="Enter Doctor ID">
+		<p>Name</p>
+		<input type=text name=t2 onkeypress="return allowOnlyLetters(event,this);" placeholder="Enter Name">
+		<p>Mobile</p>
+		<input type=number name=t3 placeholder="Enter Mobile Number">
+		<p>Email</p>
+		<input type=email name=t4 placeholder="Enter Email ID">
+		<p>Address</p>
+		<input type=text name=t5 placeholder="Enter Address">
+		<p>Password</p>
+		<input type=text name=t6 placeholder="Enter Password">
+		<p>Username</p>
+		<input type=text name=t7 placeholder="Enter Username">
+<tr>
+	<th>
+		<input type=button value="New" onclick="cln()">
+		<input type=submit value="Save" name=b1>
+		<input type=submit value="Update" name=b1>
+		<input type=submit value="Delete" name=b1>
+		<input type=submit value="All Search" name=b1>
+		<input type=submit value="Particular Search" name=b1>
+	</th>
+</tr>
+<script language="Javascript" type="text/javascript">    
+   
+	function allowOnlyLetters(e, t)   
+	{    
+	   if (window.event)    
+	   {    
+		  var charCode = window.event.keyCode;    
+	   }    
+	   else if (e)   
+	   {    
+		  var charCode = e.which;    
+	   }    
+	   else { return true; }    
+	   if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))    
+		   return true;    
+	   else  
+	   {    
+		  alert("Please enter only alphabets");    
+		  return false;    
+	   }           
+	}      
+	function cln()
+	{
+		f.t1.value=""
+		f.t2.value=""
+		f.t3.value=""
+		f.t4.value=""
+		f.t5.value=""
+		f.t6.value=""
+		f.t7.value=""
+	}
+	
+</script>

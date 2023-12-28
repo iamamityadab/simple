@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="appointment.css">
+<div class="loginbox">
+	<h1>APPOINTMENT</h1>
+<form name=f method="post" action="appointments.py">
+		<p>ID</p>
+		<input type=text name=t1 placeholder="Enter Appointment ID">
+		<p>Number</p>
+		<input type=number name=t2 placeholder="Enter Mobile Number">
+		<p>Type</p>
+		<input type=text name=t3 placeholder="Enter Doctor Category">
+		<p>Date</p>
+		<input type=date name=t4>
+		<p>Descreption</p>
+		<input type=text name=t5 placeholder="How can i help you">
+		<p>Doctor</p>
+		<input type=text name=t6 placeholder="Enter Doctor ID">
+		<input type="submit" value="Search Doctor ID" name="b1">
+<tr>
+<th>
+<input type=submit value="Save" name=b1>
+<input type=submit value="Update" name=b1>
+<input type=submit value="Delete" name=b1>
+<input type=submit value="All Search" name=b1>
+<input type=submit value="Particular Search" name=b1></th>
+</tr>
+<script language="Javascript" type="text/javascript">    
+    
+	function allowOnlyLetters(e, t)   
+	{    
+	   if (window.event)    
+	   {    
+		  var charCode = window.event.keyCode;    
+	   }    
+	   else if (e)   
+	   {    
+		  var charCode = e.which;    
+	   }    
+	   else { return true; }    
+	   if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))    
+		   return true;    
+	   else  
+	   {    
+		  alert("Please enter only alphabets");    
+		  return false;    
+	   }           
+	}      
+</script>
